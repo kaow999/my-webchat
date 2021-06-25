@@ -89,7 +89,6 @@ export const PostsList = () => {
  console.log('post', posts)
   return (
     <>
-    {/* <TitlePost>{posts[0] ? 'Post' : ''}</TitlePost> */}
       <h1>{renderedPosts}</h1>
     </>
   )

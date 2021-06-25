@@ -47,11 +47,7 @@ export const Commentbox = ({ post }) => {
       dispatch(commentAdded({ postId: post.id,  comment: comment  , userComment: users.id }))
       setComment('')
     }
-    console.log('userrrrr', users.id)
   }
-
-  console.log('papapapost!!',post)
-  console.log('cacacacomment',post.comment)
 
     return(
       <Container>
