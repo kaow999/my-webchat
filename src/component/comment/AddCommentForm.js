@@ -1,8 +1,8 @@
 import React, { useState }  from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components';
-import { commentAdded } from './postsSlice'
-import { CommentList } from './CommentList'
+import { commentAdded } from '../../features/post/postsSlice'
+import { CommentList } from '../../features/post/CommentList'
 
 const Container = styled.div``
 const Form = styled.form``

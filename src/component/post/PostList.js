@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { Icon } from "@blueprintjs/core";
-import { postDeleted } from './postsSlice'
+import { postDeleted } from '../../features/post/postsSlice'
 
 import { PostAuthor } from './PostAuthor'
-import { LikeButton } from './LikeButton'
-import { CommentList } from './CommentList'
+import { LikeButton } from '../Button/LikeButton'
+import { CommentList } from '../../features/post/CommentList'
 
 const Container = styled.div`
   margin: 24px 0 0 0;

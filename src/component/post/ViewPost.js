@@ -3,7 +3,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 import { PostAuthor } from './PostAuthor'
-import { LikeButton } from './LikeButton'
+import { LikeButton } from '../Button/LikeButton'
 import { Commentbox } from './AddCommentForm'
 import styled from 'styled-components'
 

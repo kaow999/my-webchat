@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
-import { postAdded } from './postsSlice'
+import { postAdded } from '../../features/post/postsSlice'
 
 
 const Form = styled.form`

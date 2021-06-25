@@ -19,8 +19,6 @@ const postsSlice = createSlice({
             reactions: {
               userThumbsUp: [],
               thumbsUp: 0,
-              // userHeart: [],
-              // heart: 0,
             },
             comments: []
           },
@@ -42,33 +40,16 @@ const postsSlice = createSlice({
         existingPost.reactions[reaction]--
       }
 
-      console.log('find',findUser)
-      console.log('find',findUser.length)
-
-
-      // if ( existingPost.reactions[reaction] <= 0 ) {
-      //   existingPost.reactions[reaction]++
-      // } 
-      /* //////////เอาออกตอนทำuser////////// */
-      // else {
-      //   existingPost.reactions[reaction]--
-      // }
     },
     commentAdded(state, action) {
       const { postId, comment ,userComment} = action.payload
       const existingPost = state.find((post) => post.id === postId)
       existingPost.comments.push({commentcontents:comment,userComments:userComment})
-      // existingPost.comments.push({userComments:userComment})
-
     },
     postDeleted(state, action){
       const { postId } = action.payload
-
-      console.log("postIdรับ",postId)
       
       const postIndex = state.findIndex((post) => post.id == postId)
-
-      console.log("postIndex",postIndex)
 
       state.splice(postIndex, 1)
     }
